@@ -1,0 +1,16 @@
+create database Seila;
+
+create table Contatos(codigo number, nome varchar(150), rua varchar(150), bairro varchar(150), cidade varchar(150), estado varchar(2), cep number);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(1, "Alberto", "Rua 1", "Bairro 1", "Cidade 1", "SP", 11111111);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(2, "Luiz", "Rua 2", "Bairro 2", "Cidade 2", "RJ", 22222222);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(3, "Rodrigo", "Rua 3", "Bairro 3", "Cidade 3", "ES", 33333333);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(4, "Lucas", "Rua 4", "Bairro 4", "Cidade 4", "SP", 44444444);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(5, "João", "Rua 5", "Bairro 5", "Cidade 5", "PR", 55555555);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(6, "Miguel", "Rua 6", "Bairro 6", "Cidade 6", "RS", 66666666);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(7, "Alan", "Rua 7", "Bairro 7", "Cidade 7", "RS", 77777777);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(8, "Rodrigues", "Rua 8", "Bairro 8", "Cidade 8", "SP", 88888888);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(9, "Cristiano", "Rua 9", "Bairro 9", "Cidade 9", "RJ", 99999999);
+insert into Contatos(codigo, nome, rua, bairro, cidade, estado, cep) values(10, "Lionel", "Rua 10", "Bairro 10", "Cidade 10", "SP", 59823123);
+select * from Contatos;
+
+// Terminar em casa
