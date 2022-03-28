@@ -1,0 +1,21 @@
+create database Empresa;
+
+create table Funcionarios(funcionarioId integer, nome varchar(50), sobrenome varchar (50), salario double, cargo varchar (50), departamento  varchar (50));
+insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departamento) values(1, "José", "Cruz", 1000, "Boy", "Filho do dono");
+insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departamento) values(2, "Maria", "Fonseca", 2000, "Atendente", "RH");
+insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departamento) values(3, "Lucia", "Chagas", 12000, "Gerente", "Diretoria");
+insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departamento) values(4, "João", "Monteiro", 25000, "Diretor RH", "RH");
+insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departamento) values(5, "Marcos", "Monteiro", 600, "Professor", "Ensino");
+insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departamento) values(6, "Alberto", "Camilo", 18000, "DBA", "TI");
+
+--  select * from Funcionarios Where nome like 'J%';             -- Ambos os comandos puxam os nomes que começam com a letra J
+-- select * from Funcionarios where substr(nome,1,1) = 'J';
+
+-- select * from Funcionarios where substr(nome,2,1) = 'A';          -- Ambos servem para puxar os nomes que a SEGUNDA letra do nome é A
+-- select * from Funcionarios where nome like '_A%';
+
+-- select nome || ' é um ' || cargo as "Funcionarios" from Funcionarios;
+
+-- select nome, salario, comm, (salario*12) + nvl(comm, 0) from Funcionarios;                  -- Converte um valor nulo em um valor definido
+
+select * from Funcionarios where salario >= 1000 and salario <= 1500;
