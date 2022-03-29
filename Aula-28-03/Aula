@@ -29,3 +29,5 @@ insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departa
 -- select nome from Funcionarios where nome like 'A%' or nome like 'J%';
 
 -- select nome, salario, salario + 700 from Funcionarios where cargo = "Atendente" or cargo = "Gerente";
+
+-- select sum(salario) from Funcionarios where cargo = "Atendente"         -- Soma tudo que está na categoria
