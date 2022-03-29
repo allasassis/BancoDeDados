@@ -18,4 +18,14 @@ insert into Funcionarios(funcionarioId, nome, sobrenome, salario, cargo, departa
 
 -- select nome, salario, comm, (salario*12) + nvl(comm, 0) from Funcionarios;                  -- Converte um valor nulo em um valor definido
 
-select * from Funcionarios where salario >= 1000 and salario <= 1500;
+-- select * from Funcionarios where salario >= 1000 and salario <= 1500;
+
+-- select nome, salario, cargo from Funcionarios where nome = "José" or nome = "Maria";
+
+-- select * from Funcionarios where cargo = null;
+
+-- select nome, salario, cargo from Funcionarios where nome like 'A%';
+
+-- select nome from Funcionarios where nome like 'A%' or nome like 'J%';
+
+-- select nome, salario, salario + 700 from Funcionarios where cargo = "Atendente" or cargo = "Gerente";
