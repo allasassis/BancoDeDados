@@ -1,0 +1,19 @@
+-- select LAST_NAME, SALARY, MOD(SALARY, 5000) from HR.EMPLOYEES where JOB_ID = 'SA_REP';
+
+-- select first_name, last_name, salary from hr.employees where salary >= 10000;
+
+-- select first_name, length (first_name) from hr.employees; -- Mostra a quantidade de caracteres que a coluna (first name) tem
+
+-- select employee_id, last_name, department_id from hr.employees where lower(last_name) = 'higgins';
+
+-- select first_name, lower(substr(first_name,1,4)) from hr.employees;             -- JUNTANDO FUNÇÕES = Essa função transforma tudo em minúsculo e trás as 4 primeiras letras (ou a quantidade q vc definir) do first name
+
+-- select first_name, job_id, salary * 12 from hr.employees where job_id = '&job_id';
+
+-- select department_id, min(salary), max(salary), sum(salary) from hr.employees group by department_id;               -- Essa função e a debaixo agrupam o resultado pelo departamento
+
+-- select job_id, sum(salary) from hr.employees group by job_id;
+
+-- select job_id, min(salary), max(salary) from hr.employees group by job_id having job_id <> 'AD_VP' order by job_id desc;          -- Vai trazer todo mundo que for diferente de AD VP ordenando pelo job id
+
+-- select job_id, avg(salary), (substr(first_name,1,2)) from hr.employees group by job_id having avg(salary) > 1500;
