@@ -8,5 +8,10 @@
 -- select location_id, city, state_province from locations where city like upper('t%);
 
 -- EXERCICIO 4: Mostrar o código do departamento e um total de quantos funcionários pertencem a cada departamento, utilizar a tabela EMP:
+-- select deptno, count(*) from scott.emp group by deptno;
 
+-- EXERCICIO 5: Mostrar o código do país e o número de estados de cada um. Tabela locations:
+-- select country_id, count(state_province) from hr.locations group by country_id;
 
+-- EXERCICIO 6:
+-- select job, avg(sal) from scott.emp group by job having avg(sal) > 2500 order by 2;
