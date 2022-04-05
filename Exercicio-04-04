@@ -1,1 +1,12 @@
+-- EXERCICIO 1: Selecionar o menor código da tabela departamento:
+-- select min(DEPTNO), max(DEPTNO) from scott.dept;
+
+-- EXERCICIO 2: Mostrar o total de localidades da tabela locations
+-- select count(loc) from scott.dpt;
+
+-- EXERCICIO 3: Mostrar o código da localização, cidade e o estado, para as cidades com o nome iniciado pela letra T:
+-- select location_id, city, state_province from locations where city like upper('t%);
+
+-- EXERCICIO 4: Mostrar o código do departamento e um total de quantos funcionários pertencem a cada departamento, utilizar a tabela EMP:
+
 
