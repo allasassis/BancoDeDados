@@ -1,0 +1,14 @@
+--select first_name, job_id from hr.employees where job_id in (select job_id from hr.employees where first_name = 'Alexander') order by first_name;
+
+--select first_name, job_id, department_id from hr.employees where department_id in (select department_id from hr.employees where first_name = 'Luis') order by first_name;
+
+
+
+-- Exercicio 1: Mostrar os dados dos empregados que trabalhem no mesmo departamento que o DANIEL
+-- select first_name, job_id, department_id, hire_date from hr.employees where department_id in (select department_id from hr.employees where first_name = 'Daniel') order by first_name;
+
+-- Exercicio 2: Mostrar os dados dos empregados que trabalhem no departamento '60'
+select first_name, job_id, department_id, hire_date from hr.employees where department_id in (select department_id from hr.employees where department_id = 60) order by first_name;
+
+-- Exercicio 3: Mostrar os dados dos empregados cujo salário seja maior que a média salarial de todos os empregados
+select first_name, job_id, salary from hr.employees where salary > (select avg(salary) from hr.employees);
