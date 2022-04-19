@@ -1,0 +1,13 @@
+-- select employees.first_name, employees.department_id, departments.last_name from hr.employees, hr.departments where employees.department_id = departments.department_id;
+
+-- select e.last_name, e.salary, j.grade_leve from hr.employees and join grades hr.jobs on e.salary between j.lowest_sal and j.highest_sal;
+
+-- select hr.worker.first_name || ' trabalha para ' || hr.manager.first_name from hr.employees worker, hr.employees manager where hr.worker.MANAGER_ID = hr.manager.EMPLOYEE_ID;
+
+-- Mostrar o nome do empregado, codigo do dpt e o nome do dpto desde que o nome seja igual a TURNER utilizando as tabelas emp e dept
+
+ EXERCICIO 1: select hr.employees.first_name from hr.employees, hr.departments where hr.worker.first_name and hr.employees.first_name = 'Turner';
+ 
+ EXERCICIO 2: ??
+
+-- FAZER O EXERCICIO 1 E 2 
