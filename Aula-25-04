@@ -51,10 +51,10 @@ select name, sal, dep from employees where dep = 20 order by sal DESC;
 select * from employees where sal between 1000 and 5500;
 
 
-- Selecionar todos os empregados com os códigos 7902, 7788, 7876, 7839:
+- Selecionar todos os empregados com os salários de 17000 e 4800:
 
 
-select * from employees where codigo = 7902 or 7788 or 7876 or 7839;
+select * from employees where sal = 17000 or sal = 4800;
 
 
 - Selecionar todos os nomes de empregados que iniciem com TH:
