@@ -1,0 +1,64 @@
+AULA DE REVISÃO PARA A PROVA
+
+EXERCICIO TABELA MORADORES
+
+1) INSERT into tbWebMoradores (idMorador, tipo, nome, rg, cpf, email, telefone, celular) values(1, "Casa", "Alberto", "423.231.32-X", "221.233.451.21", "123@gmail.com", "40028922", "11 97432123");
+
+
+
+2) SELECT * from tbWebMoradores WHERE email = "emailteste123@gmail.com";
+
+
+
+3) UPDATE tbWebMoradores SET cpf = "642.325.433-12" WHERE idMorador = 1;
+
+
+
+4) DELETE from tbWebMoradores WHERE idMorador = 1;
+
+---------------------------------------------------------------------------------------------
+
+-- EXERCICIOS TABELA RESERVAS
+
+1) select idSalao from tbWebReservas where status = "disponivel" and data >= 30;
+
+
+- PARA NÃO REPETIR OS TERMOS: 
+
+select distinct(job) from employees;
+
+
+- PARA FORMATAR A DATA SELECIONANDO O NOME, SALÁRIO E DATA DE ADMISSÃO: 
+
+select ename, sal, date_format (hiredate, '%d/%m/%Y) from employees;
+
+
+- Selecionar os dados dos empregados, MENOS os que ganham 1500 e 2850: 
+
+
+select * from employees where sal <> 1500 and sal <> 2850;
+
+
+- Selecionar os dados dos empregados do DEP 20, ordenar por departamento e depois por salário em ordem decrescente:
+
+
+select name, sal, dep from employees where dep = 20 order by sal DESC;
+
+
+- Selecionar todos os empregados que tenham o saláro entre 1000 e 1500:
+
+
+select * from employees where sal between 1000 and 5500;
+
+
+- Selecionar todos os empregados com os códigos 7902, 7788, 7876, 7839:
+
+
+select * from employees where codigo = 7902 or 7788 or 7876 or 7839;
+
+
+- Selecionar todos os nomes de empregados que iniciem com TH:
+
+
+select ename from employees where ename like 'TH%';
+
